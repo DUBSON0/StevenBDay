@@ -26,6 +26,7 @@ void setup() {
     Serial.println("SD card failed, or not present");
     while (1); // Halt if SD fails                                         
   }
+  randomSeed(analogRead(0));
   ad.quality(1); 
   ad.volume(7);
 
